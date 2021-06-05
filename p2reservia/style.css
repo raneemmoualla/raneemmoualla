@@ -56,12 +56,12 @@
                 color: #0065FC;
             }
             
-            .hebergements-activites a:hover {
+            .hebergements_activites a:hover {
                 border-top: 3px solid #0065FC;
             }
             /*titre-principale*/
             
-            .titre_principale {
+            #titre_principale {
                 padding-left: 10px;
             }
             
@@ -130,13 +130,13 @@
             }
             /*filter*/
             
-            #filtres-section {
+            #filtres_section {
                 display: flex;
                 margin: 32px 0px 41px 0px;
                 align-items: center;
             }
             
-            .filtre-bouton {
+            .filtre_bouton {
                 display: flex;
                 flex-direction: row;
                 position: relative;
@@ -148,7 +148,7 @@
                 display: flex;
             }
             
-            .circle-icon-filter {
+            .circle_icon_filter {
                 width: 50px;
                 height: 50px;
                 background-color: #DEEBFF;
@@ -161,7 +161,8 @@
             
             .filtre {
                 display: flex;
-                font-size: 0.9em
+                font-size: 0.9em;
+                margin-left: 10px;
             }
             
             h2 {
@@ -206,7 +207,7 @@
                 font-size: 1em;
             }
             
-            .filtre-bouton:hover {
+            .filtre_bouton:hover {
                 text-decoration: #0065FC;
                 color: #0065FC;
             }
@@ -375,6 +376,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 width: 98%;
+                padding-top: 20px;
             }
             
             .titre_activite {
@@ -494,7 +496,7 @@
             @media all and (min-width: 100px) and (max-width: 767px) {
                 /*header*/
                 #container {
-                    align-items: flex-start;
+                    width: 98%;
                 }
                 .signup {
                     position: absolute;
@@ -515,13 +517,13 @@
                     justify-content: space-around;
                     align-items: center;
                 }
-                .hebergements-activites {
+                .hebergements_activites {
                     border-bottom: 3px solid #f2f2f2;
                     padding-bottom: 15px;
                     margin-right: 13px;
                     font-size: 0.9em;
                 }
-                .hebergements-activites a:hover {
+                .hebergements_activites a:hover {
                     border-bottom: 3px solid #0065fc;
                     border-top: none;
                     padding-bottom: 15px;
@@ -563,10 +565,10 @@
                 .filtre {
                     flex-wrap: wrap;
                 }
-                #filtres-section {
+                #filtres_section {
                     flex-direction: column;
                 }
-                .filtre-bouton {
+                .filtre_bouton {
                     margin: 10px;
                 }
                 /*hebergement_a_marseille*/
@@ -610,6 +612,7 @@
                 .activites_container {
                     flex-direction: column;
                     height: auto;
+                    margin-bottom: -25px;
                 }
                 .photo_activite33,
                 .photo_activite11,
@@ -622,7 +625,7 @@
                 }
                 .box_activite {
                     width: 100%;
-                    padding-top: 25px;
+                    padding-top: 15px;
                 }
                 .activite1,
                 .activite2_1,
@@ -632,8 +635,12 @@
                 .activite4_2 {
                     height: 175px;
                 }
+                .activite4_2,
+                .activite2_2 {
+                    margin-top: -10px;
+                }
                 .activite3 {
-                    margin-top: -25px;
+                    margin-top: -30px;
                 }
                 /*footer*/
                 .les_titre {
@@ -645,6 +652,7 @@
                 footer {
                     background-color: #F2F2F2;
                     height: auto;
+                    width: 100%;
                 }
                 h5 {
                     font-size: 1.1em;
@@ -663,7 +671,7 @@
                     text-align: end;
                     font-size: 1.1em;
                 }
-                .titre_principale {
+                #titre_principale {
                     text-align: center;
                     margin-bottom: 15px;
                 }
